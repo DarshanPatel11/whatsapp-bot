@@ -17,7 +17,8 @@ def get_last_message(msg):
 
 option = webdriver.ChromeOptions()
 option.add_argument('--user-data-dir=C:/Users/"Your UserName"/AppData/Local/Google/Chrome/User Data')
-driver = webdriver.Chrome('Path to chromedriver.exe', chrome_options=option)
+#i.e, option.add_argument('--user-data-dir=C:/Users/DARSHAN/AppData/Local/Google/Chrome/User Data')
+driver = webdriver.Chrome('E:/project/chromedriver', chrome_options=option) #change chromedriver path
 driver.get("http://web.whatsapp.com/")
 wait = WebDriverWait(driver, 50)
 # wait until webpage loads successfully to prevent any exception
